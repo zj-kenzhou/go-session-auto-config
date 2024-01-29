@@ -1,0 +1,36 @@
+session:
+  # 最长有效期 默认七天 604800 单位，秒
+  timeout: 604801
+  # 有效期，默认两个小时 7200 单位，秒
+  activity-timeout: 7201
+  # redis存储前缀
+  key-prefix: test
+  # redis 地址列表
+  host:
+    - 127.0.0.1:6379
+  # redis username
+  username:
+  # redis password
+  password:
+  # redis 哨兵username
+  sentinel-username:
+  # redis 哨兵password
+  sentinel-password:
+  # db 默认0
+  db: 2
+  # 集群 masterName
+  master-name:
+  # 集群 clientName
+  client-name:
+  # 连接池大小 默认100
+  pool-size: 5
+  # 获取连接timeout 默认10s
+  pool-timeout: 10
+  # 最小空闲连接，默认 1
+  min-idle-conns: 1
+  # 最大空闲连接，默认 10
+  max-idle-conns: 10
+  # 最大空闲时间， 默认60 单位，分钟
+  conn-max-idle-time: 61
+  # 最大存活时间， 默认1440(24小时) 单位，分钟
+  conn-max-lifetime: 120

@@ -32,10 +32,10 @@ func init() {
 		Db:               fastconfig.GetInt("session.db", 0),
 		MasterName:       fastconfig.GetString("session.master-name", ""),
 		ClientName:       fastconfig.GetString("session.client-name", ""),
-		PoolSize:         fastconfig.GetInt("session.pool-size", 100),
+		PoolSize:         fastconfig.GetInt("session.pool-size", 150),
 		PoolTimeout:      fastconfig.GetInt("session.pool-timeout", 10),
-		MinIdleConns:     fastconfig.GetInt("session.min-idle-conns", 1),
-		MaxIdleConns:     fastconfig.GetInt("session.max-idle-conns", 10),
+		MinIdleConns:     fastconfig.GetInt("session.min-idle-conns", 10),
+		MaxIdleConns:     fastconfig.GetInt("session.max-idle-conns", 20),
 		ConnMaxIdleTime:  fastconfig.GetInt("session.conn-max-idle-time", 30),
 		ConnMaxLifetime:  fastconfig.GetInt("session.conn-max-lifetime", 240),
 	})
